@@ -48,5 +48,16 @@
 
 <script type="text/javascript"></script>
 <noscript><div><hr/><ul><li><a href="files/basic-html/index.html">Pages</a></li></ul><hr style="width:80%"/></div></noscript>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body').bind('cut copy paste', function(e) {
+			e.preventDefault();
+		})
+		$("body").on("contextmenu",function(e) {
+			return false;
+		})
+	})
+	</script>
 </body>
 </html>
